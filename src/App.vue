@@ -4,6 +4,7 @@
   </div>
 </template>
 
+
 <script>
 import Welcome from './views/Welcome.vue'
 
