@@ -1,7 +1,9 @@
 <template>
    <div class="global">
     <div class="tittle">桐庐老干部局信息系统</div>
-    <div class="icon_huodong"></div>
+    <div class="border_huodong">
+        <div  class="icon_huodong"></div>
+    </div>
     <div class="swiper"></div>
     <div class="last"></div>
    </div>
@@ -47,7 +49,7 @@ export default {
     width: 850px;
     height: 434px;
 }
-.icon_huodong{
+.border_huodong{
     position: absolute;
     top: 785px;
     left: 128px;
@@ -56,6 +58,15 @@ export default {
     background: #FFFFFF;
     border-radius: 15px;
     border: 2px solid #AF3333;
+}
+.icon_huodong{
+    position: absolute;
+    background: url(../assets/活动安排.png);
+    background-size: 100% 100%;
+    width: 72px;
+    height: 72px;
+    top: 15px;
+    left: 29px;
 }
 .last{
     position: absolute;
