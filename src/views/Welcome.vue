@@ -26,7 +26,9 @@
         <div class="icon_hujiao"></div>
         <div class="text_hujiao">呼叫客服</div>
     </div>
-    <div class="last"></div>
+    <div class="last">
+        <div class="last_text">活动风采</div>
+    </div>
    </div>
 </template>
 
@@ -275,5 +277,19 @@ export default {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5000);
     border-radius: 16px;
+}
+.last_text{
+    position: absolute;
+    top: 32px;
+    left: 329px;
+    width: 192px;
+    height: 67px;
+    font-size: 48px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #E13131;
+    line-height: 67px;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5000), 0px 2px 2px rgba(0,0,0,0.5000);
+    -webkit-background-clip: text;
 }
 </style>
