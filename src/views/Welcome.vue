@@ -1,35 +1,43 @@
 <template>
    <div class="global">
     <div class="tittle">桐庐老干部局信息系统</div>
+
     <div class="swiper">
         <div class="swiper_border"></div>
         <div class="swiper_icon"></div>
         <div class="swiper_text">党建风采</div>
     </div>
+
     <div class="border_huodong">
         <div  class="icon_huodong"></div>
         <div class="text_huodong">活动安排</div>
     </div>
+
     <div class="border_tongzhi">
         <div class="icon_tongzhi"></div>
         <div class="text_tongzhi">通知公告</div>
     </div>
+
     <div class="border_fengcai">
         <div class="icon_fengcai"></div>
         <div class="text_fengcai">活动风采</div>
     </div>
+
     <div class="border_qiandao">
         <div class="icon_qiandao"></div>
         <div class="text_qiandao">签到打卡</div>
     </div>
+
     <div class="border_hujiao">
         <div class="icon_hujiao"></div>
         <div class="text_hujiao">呼叫客服</div>
     </div>
+
     <div class="last">
         <div class="last_text">活动风采</div>
     </div>
    </div>
+   
 </template>
 
 <script>
