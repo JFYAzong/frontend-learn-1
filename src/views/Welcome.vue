@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <div class="tittle">Xx局信息系统</div>
+    <div class="tittle">{{ title }}</div>
 
     <div class="swiper">
       <div class="swiper__item"></div>
@@ -9,44 +9,55 @@
     </div>
 
     <div class="button-box">
-      <div class="button">
+      <div
+        v-for="(item, index) in buttons"
+        :key="index"
+        class="button"
+        @click="onClickButton(item)"
+      >
         <div class="button__icon"></div>
-        <div class="button__text">活动安排</div>
-      </div>
-      <div class="button">
-        <div class="button__icon"></div>
-        <div class="button__text">活动安排</div>
-      </div>
-      <div class="button">
-        <div class="button__icon"></div>
-        <div class="button__text">活动安排</div>
-      </div>
-      <div class="button">
-        <div class="button__icon"></div>
-        <div class="button__text">活动安排</div>
-      </div>
-      <div class="button">
-        <div class="button__icon"></div>
-        <div class="button__text">活动安排</div>
+        <div class="button__text">{{ item.text }}</div>
       </div>
     </div>
 
     <div class="last">
-      <div class="last__text">活动风采</div>
+      <div class="last__title">{{ articleTitle }}</div>
+      <div class="last__content">{{ articleContent }}</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Welcome"
+  name: "Welcome",
+  data() {
+    return {
+      title: "Xx局信息系统",
+      buttons: [
+        { icon: "活动安排.png", text: "活动安排" },
+        { icon: "活动安排.png", text: "通知公告" },
+        { icon: "活动安排.png", text: "活动风采" },
+        { icon: "活动安排.png", text: "签到打卡" },
+        { icon: "活动安排.png", text: "呼叫客服" }
+      ],
+      articleTitle: '',
+      articleContent: ''
+    };
+  },
+  mounted() {
+    this.onClickButton(this.buttons[0])
+  },
+  methods: {
+    onClickButton(item) {
+      console.log("click", item);
+      this.articleTitle = item.text;
+    }
+  }
 };
 </script>
 
 <style scoped lang="scss">
 .box {
-  display: flex;
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background: url("../assets/background.jpg");
@@ -169,7 +180,7 @@ export default {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
     border-radius: 16px;
 
-    &__text {
+    &__title {
       position: absolute;
       top: 32px;
       left: 329px;
