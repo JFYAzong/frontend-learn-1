@@ -38,21 +38,21 @@ export default {
         { icon: "活动安排.png", text: "通知公告" },
         { icon: "活动安排.png", text: "活动风采" },
         { icon: "活动安排.png", text: "签到打卡" },
-        { icon: "活动安排.png", text: "呼叫客服" }
+        { icon: "活动安排.png", text: "呼叫客服" },
       ],
-      articleTitle: '',
-      articleContent: ''
+      articleTitle: "",
+      articleContent: "",
     };
   },
   mounted() {
-    this.onClickButton(this.buttons[0])
+    this.onClickButton(this.buttons[0]);
   },
   methods: {
     onClickButton(item) {
       console.log("click", item);
       this.articleTitle = item.text;
-    }
-  }
+    },
+  },
 };
 </script>
 
