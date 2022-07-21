@@ -69,7 +69,6 @@ export default {
     top: 155px;
     left: 0;
     right: 0;
-
     font-size: 64px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
